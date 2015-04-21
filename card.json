@@ -63,7 +63,7 @@
     },
     "negative_a": {
       "variables": {
-        "card_class": "physician",
+        "card_class": "negative_a",
         "card_text_start": "Patients and physicians in ",
         "card_text_end": " are disappointed that you voted against H.R. 2. Thankfully, others in Congress put patient care first and <strong>passed this bill</strong> to repeal SGR!",
         "vote": "-"
@@ -71,7 +71,7 @@
     },
     "negative_b": {
       "variables": {
-        "card_class": "physician",
+        "card_class": "negative_b",
         "card_text_start": "Patients and physicians in ",
         "card_text_end": " are disappointed that you voted against H.R. 2. Thankfully, others in Congress put patient care first and <strong>passed this bill</strong> to repeal SGR!",
         "vote": "-"
@@ -79,7 +79,7 @@
     },
     "negative_c": {
       "variables": {
-        "card_class": "physician",
+        "card_class": "negative_c",
         "card_text_start": "Patients and physicians in ",
         "card_text_end": " are disappointed that you voted against H.R. 2. Thankfully, others in Congress put patient care first and <strong>passed this bill</strong> to repeal SGR!",
         "vote": "-"
