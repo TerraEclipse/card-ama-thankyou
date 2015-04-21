@@ -11,9 +11,9 @@ $(function() {
           'positive_a': 1,
           'positive_b': 1,
           'positive_c': 1,
-          'negative_a': 1.2,
-          'negative_b': 1.2,
-          'negative_c': 1.2
+          'negative_a': 1.3,
+          'negative_b': 1.3,
+          'negative_c': 1.3
         };
 
     $.each(charArray, function(index,character) {
