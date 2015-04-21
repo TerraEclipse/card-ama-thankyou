@@ -1,0 +1,655 @@
+/*
+=========================================
+BASE DOM SETUP
+=========================================
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'myriad-pro-condensed','Helvetica Neue','Helvetica',sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1em;
+  /*text-transform: uppercase;*/
+}
+
+/*
+=========================================
+HELPER CLASSES
+=========================================
+*/
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+     -moz-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.light-shadow {
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+.shadow {
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.75);
+}
+
+.circle-crop {
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  overflow: hidden;
+}
+.circle-crop img {
+  width: 100%;
+}
+
+/*
+=========================================
+BASE CARD STYLES
+=========================================
+*/
+
+.card {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+}
+
+/*
+=========================================
+CARD BACKGROUND
+=========================================
+*/
+
+.card-bg,
+.color-layer,
+.dark-layer,
+.color {
+  position: absolute;
+}
+.card-bg,
+.color-layer {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.card-bg {
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.color-layer {
+  opacity: 0.8;
+}
+.color {
+  width: 100%;
+  font-size: 0;
+  opacity: 0.8;
+}
+.top {
+  top: 0;
+  height: 50px;
+}
+.bottom {
+  bottom: 0;
+  height: 52px;
+}
+
+body.loop-1 .patient .top {
+  background: url('../img/color-top-patient-1.png');
+}
+body.loop-1 .patient .bottom {
+  background: url('../img/color-bottom-patient-1.png');
+}
+body.loop-1 .physician .top {
+  background: url('../img/color-top-physician-1.png');
+}
+body.loop-1 .physician .bottom {
+  background: url('../img/color-bottom-physician-1.png');
+}
+
+body.loop-2 .patient .top {
+  background: url('../img/color-top-patient-2.png');
+}
+body.loop-2 .patient .bottom {
+  background: url('../img/color-bottom-patient-2.png');
+}
+body.loop-2 .physician .top {
+  background: url('../img/color-top-physician-2.png');
+}
+body.loop-2 .physician .bottom {
+  background: url('../img/color-bottom-physician-2.png');
+}
+
+body.loop-3 .patient .top {
+  background: url('../img/color-top-patient-3.png');
+}
+body.loop-3 .patient .bottom {
+  background: url('../img/color-bottom-patient-3.png');
+}
+body.loop-3 .physician .top {
+  background: url('../img/color-top-physician-3.png');
+}
+body.loop-3 .physician .bottom {
+  background: url('../img/color-bottom-physician-3.png');
+}
+
+.dark-layer {
+  top: 70px;
+  width: 100%;
+  height: 190px;
+  background: url('../img/copy-bg.png');
+  opacity: 0.4;
+}
+
+/*
+=========================================
+GREETING
+=========================================
+*/
+
+.greeting {
+  position: absolute;
+  top: 8px;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+.photo,
+.salutation {
+  display: inline-block;
+}
+
+.photo {
+  position: relative;
+}
+.target.photo {
+  width: 85px;
+  height: 82px;
+}
+
+.outline,
+.image {
+  position: absolute;
+}
+
+.outline {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.target .outline {
+  background: url('../img/target-outline.png') no-repeat top left;
+}
+
+.target .image {
+  top: 2px;
+  left: 2px;
+  width: 78px;
+  height: 78px;
+}
+
+body.loop-1 .patient .image {
+  background: url('../img/default-avatar-patient-1.jpg');
+  background-size: cover;
+}
+body.loop-2 .patient .image {
+  background: url('../img/default-avatar-patient-2.jpg');
+  background-size: cover;
+}
+body.loop-3 .patient .image {
+  background: url('../img/default-avatar-patient-3.jpg');
+  background-size: cover;
+}
+
+body.loop-1 .physician .image {
+  background: url('../img/default-avatar-physician-1.jpg');
+  background-size: cover;
+}
+body.loop-2 .physician .image {
+  background: url('../img/default-avatar-physician-2.jpg');
+  background-size: cover;
+}
+body.loop-3 .physician .image {
+  background: url('../img/default-avatar-physician-3.jpg');
+  background-size: cover;
+}
+
+.salutation {
+  position: relative;
+  top: -30px;
+  padding-left: 10px;
+  font-family: 'Origo',cursive;
+  font-size: 2.35em;
+  font-weight: normal;
+  line-height: 0.25em;
+}
+
+/*
+=========================================
+MAIN COPY
+=========================================
+*/
+
+.main-copy {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  height: 125px;
+  text-align: center;
+  z-index: 1;
+}
+
+h1 {
+  width: 100%;
+  padding: 0 30px;
+  line-height: 1.25em;
+}
+/*h1 strong {
+  font-weight: normal;
+}*/
+.card-text {
+  line-height: 1em;
+}
+
+body.loop-1 .patient .main-copy strong {
+  color: #ED8240;
+}
+body.loop-2 .patient .main-copy strong {
+  color: #f0bc48;
+}
+body.loop-3 .patient .main-copy strong {
+  color: #fd7352;
+}
+
+body.loop-1 .physician .main-copy strong {
+  color: #63BCE8;
+}
+body.loop-2 .physician .main-copy strong {
+  color: #44C5D8;
+}
+body.loop-3 .physician .main-copy strong {
+  color: #7EB0FC;
+}
+
+/*
+=========================================
+SIGNATURE
+=========================================
+*/
+
+.signature {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+.no-avatar .signature {
+  bottom: 44px;
+  font-size: 21px;
+}
+
+.signer.photo {
+  width: 107px;
+  height: 103px;
+}
+.no-avatar .signer.photo {
+  display: none;
+}
+
+.signer .outline {
+  background: url('../img/signer-outline.png');
+}
+
+.signer .image {
+  top: 5px;
+  left: 5px;
+  width: 98px;
+  height: 95px;
+}
+
+.signer-info {
+  position: relative;
+  top: -15px;
+  display: inline-block;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.name {
+  font-family: 'Origo',cursive;
+  font-weight: normal;
+  font-size: 2.25em;
+  line-height: 0.5em;
+}
+
+.location {
+  margin-top: 5px;/*
+  font-weight: 700;*/
+  font-size: 1.15em;/*
+  text-transform: uppercase;*/
+}
+
+body.loop-1 .patient .location {
+  color: #ED8240;
+}
+body.loop-2 .patient .location {
+  color: #f0bc48;
+}
+body.loop-3 .patient .location {
+  color: #fd7352;
+}
+
+body.loop-1 .physician .location {
+  color: #63BCE8;
+}
+body.loop-2 .physician .location {
+  color: #26e0fc;
+}
+body.loop-3 .physician .location {
+  color: #5297ff;
+}
+
+/*
+=========================================
+FOOTER
+=========================================
+*/
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  z-index: 2;
+}
+.footer-content {
+  position: relative;
+  top: 8px;
+  width: 100%;
+  height: 28px;
+  font-size: 1.3em;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.75);
+  opacity: 0.8;
+  padding: 0 20px;
+}
+
+.ama-logo-circle {
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  width: 194px;
+  height: 108px;
+  background: url('../img/ama-logo-circle.png') no-repeat top left;
+}
+
+.ama-logo {
+  display: inline-block;
+  width: 71px;
+  height: 28px;
+  background: url('../img/ama-logo.png') no-repeat top left;
+}
+.link,
+.bullet {
+  position: relative;
+}
+.link {
+  font-weight: 600;
+}
+.bullet {
+  top: -3px;
+  margin: 0 10px;
+  font-size: 2em;
+}
+.footer strong {
+  font-weight: 600;
+  color: #fff;
+}
+
+/*
+=========================================
+ALTERNATE LAYOUTS
+=========================================
+*/
+
+.photo.target.large,
+.salutation.alternate,
+.doctors,
+.doctors-dark,
+.snake {
+  display: none;
+}
+body.loop-1 .photo.target.large,
+body.loop-1 .salutation.alternate {
+  display: block;
+}
+
+.doctors {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+.doctors img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.doctors-dark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.doctors-dark img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.snake {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.3;
+  text-align: center;
+  padding-top: 34px;
+}
+.rep-callout {
+  /*display: block;*/
+  /*font-size: 30px;
+  margin-top: 0.65em;*/
+  color: #53D532;
+  font-weight: 700;
+}
+.yes {
+  text-decoration: underline;
+}
+body.loop-1 .dark-layer,
+body.loop-3 .dark-layer {
+  top: auto;
+  bottom: -70px;
+}
+body.loop-1 .doctors-dark {
+  display: block;
+}
+body.loop-1 h1,
+body.loop-1 .greeting {
+  text-align: left;
+  padding-right: 20px;
+}
+body.loop-1 h1 {
+  padding-left: 31%;
+}
+body.loop-1 .greeting {
+  padding-left: 29%;
+}
+body.loop-1 .photo.target.small,
+body.loop-1 .salutation.normal {
+  display: none;
+}
+body.loop-1 .salutation {
+  top: auto;
+  padding-left: 0;
+  font-size: 2.5rem;
+  font-weight: normal;
+  text-transform: none;
+  margin-left: -10px;
+  margin-bottom: 20px;
+}
+body.loop-1 .greeting {
+  top: 72px;
+}
+body.loop-1 .main-copy,
+body.loop-3 .main-copy {
+  top: 70px;
+}
+body.loop-1 .photo.target.large,
+body.loop-3 .photo.target.large {
+  position: absolute;
+  top: -60px;
+}
+body.loop-1 .photo.target.large {
+  left: -40px;
+}
+body.loop-1 .photo.target.large,
+body.loop-1 .photo.target.large .outline,
+body.loop-3 .photo.target.large,
+body.loop-3 .photo.target.large .outline {
+  width: 260px;
+  height: 260px;
+}
+body.loop-1 .photo.target.large .outline,
+body.loop-3 .photo.target.large .outline {
+  background: url('../img/circle-outline.png');
+  background-size: cover;
+}
+body.loop-1 .photo.target.large .image,
+body.loop-3 .photo.target.large .image {
+  top: 10px;
+  left: 10px;
+  width: 240px;
+  height: 240px;
+}
+body.loop-1 .signature,
+body.loop-3 .signature {
+  bottom: 52px;
+}
+body.loop-1 .signature {
+  text-align: right;
+  padding-right: 30px;
+}
+body.loop-1 .footer-content {
+  text-align: right;
+}
+
+body.loop-2 .snake {
+  display: block;
+}
+body.loop-2 .footer-content {
+  text-align: right;
+}
+body.loop-2 .ama-logo-circle {
+  width: 136px;
+  height: 76px;
+  background: url('../img/ama-logo-circle.png') no-repeat top left;
+  background-size: cover;
+  left: 20px;
+}
+
+body.loop-3 h1,
+body.loop-3 .greeting {
+  text-align: left;
+}
+body.loop-3 .greeting {
+  padding-left: 20px;
+}
+body.loop-3 h1 {
+  padding-right: 35%;
+  padding-left: 30px;
+}
+body.loop-3 .main-copy {
+  top: 109px;
+  z-index: 2;
+}
+body.loop-3 .photo.target.large {
+  right: -40px;
+}
+body.loop-3 .signature {
+  text-align: left;
+  padding-left: 30px;
+}
+body.loop-3 .photo.signer,
+body.loop-3 .photo.signer .outline {
+  width: 83px;
+  height: 82px;
+}
+body.loop-3 .photo.signer {
+  margin-right: 10px;
+}
+body.loop-3 .photo.signer .outline {
+  background-size: cover;
+}
+body.loop-3 .photo.signer .image {
+  width: 73px;
+  height: 73px;
+}
+body.loop-3 .name {
+  font-size: 1.9em;
+}
+body.loop-3 .signer-info {
+  text-align: left;
+  margin-left: 0;
+}
+body.loop-3 .doctors {
+  display: block;
+}
+body.loop-3 .dark-layer {
+  z-index: 1;
+}
+body.loop-3 .color.bottom {
+  z-index: 2;
+}
+body.loop-3 .footer-content {
+  text-align: left;
+}
+body.loop-3 .ama-logo-circle {
+  left: auto;
+  right: 20px;
+}

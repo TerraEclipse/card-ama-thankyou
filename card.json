@@ -1,0 +1,82 @@
+{
+  "title": "AMA Fix Medicare Thank You Card",
+  "description": "Card for AMA Fix Medicare Thank You campaign",
+  "typekit": true,
+  "wait": true,
+  "sizes": {
+    "twitter": {
+      "width": 800,
+      "height": 400,
+      "default": true
+    }
+  },
+  "styles": [
+    "./fonts/origo.css",
+    "./css/styles.css"
+  ],
+  "scripts": [
+    "http://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js",
+    "./js/vendor/jquery-1.11.0.min.js",
+    "./js/main.js"
+  ],
+  "variables": {
+    "first": "Your",
+    "last": "Name",
+    "city": "Aptos",
+    "state": "CA",
+    "state_full": "Your Hometown",
+    "avatar": null,
+    "target": {
+      "title": "Sen/Rep",
+      "first": "First",
+      "last": "Last"
+    },
+    "variant": "physician_payment_cuts",
+    "variants_shared": [],
+    "targets_shared": []
+  },
+  "variants": {
+    "positive_a": {
+      "variables": {
+        "card_class": "positive_a",
+        "card_text_start": "Patients and physicians in ",
+        "card_text_end": " <strong>thank you</strong> for voting for H.R. 2. Repealing the SGR puts patient care first, and you came through for us!"
+      }
+    },
+    "positive_b": {
+      "variables": {
+        "card_class": "positive_b",
+        "card_text_start": "Thank you for listening to patients and physicians in ",
+        "card_text_end": " <strong>thank you</strong> for passing H.R. 2 and making SGR repeal happen!"
+      }
+    },
+    "positive_c": {
+      "variables": {
+        "card_class": "positive_c",
+        "card_text_start": "H.R. 2 passed and we couldn't have done it without you. <strong>Thank you</strong> for hearing the patients and physicians of ",
+        "card_text_end": " and repealing the SGR!"
+      }
+    },
+    "negative_a": {
+      "variables": {
+        "card_class": "physician",
+        "card_text_start": "Patients and physicians in ",
+        "card_text_end": " are disappointed that you voted against H.R. 2.  Thankfully, others in Congress put patient care first and <strong>passed this bill</strong> to repeal SGR!"
+      }
+    },
+    "negative_b": {
+      "variables": {
+        "card_class": "physician",
+        "card_text_start": "Patients and physicians in ",
+        "card_text_end": " are disappointed that you voted against H.R. 2.  Thankfully, others in Congress put patient care first and <strong>passed this bill</strong> to repeal SGR!"
+      }
+    },
+    "negative_c": {
+      "variables": {
+        "card_class": "physician",
+        "card_text_start": "Patients and physicians in ",
+        "card_text_end": " are disappointed that you voted against H.R. 2.  Thankfully, others in Congress put patient care first and <strong>passed this bill</strong> to repeal SGR!"
+      }
+    }
+  }
+}

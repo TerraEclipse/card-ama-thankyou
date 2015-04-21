@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    {{!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700,300|Pacifico" type="text/css"> --}}
+    {{{styles}}}
+    <!-- <script src="./js/vendor/jquery-1.11.0.min.js"></script>
+    <script src="./js/main.js"></script> -->
+  </head>
+
+  <body>
+    <!-- <div class="{{#if card_class}} {{card_class}}{{else}}patient{{/if}}{{#if avatar}} avatar{{else}} no-avatar{{/if}} card" style="background-image: url('{{base_url}}/img/states/{{#if state}}{{state}}{{else}}CA{{/if}}.jpg');"> -->
+    <div class="{{#if card_class}} {{card_class}}{{else}}patient{{/if}}{{#if avatar}} avatar{{else}} no-avatar{{/if}} card">
+      <!-- Greeting -->
+      <div class="greeting">
+        <div class="photo target small">
+          <div class="outline"></div>
+          <div class="image circle-crop"{{#if target.photo}} style="background-image: url('{{target.photo}}'); background-size: cover;"{{/if}}></div>
+        </div>
+        <div class="salutation normal light-shadow">{{#if target.title_short}}{{target.title_short}} {{else}} Sen/Rep{{/if}}{{#if target.last}} {{target.last}}{{/if}},</div>
+      </div>
+
+      <!-- Main Copy -->
+      <div class="main-copy">
+        <div class="photo target large">
+          <div class="outline"></div>
+          <div class="image circle-crop"{{#if target.photo}} style="background-image: url('{{target.photo}}'); background-size: cover;"{{/if}}></div>
+        </div>
+        <h1 class="centered shadow">
+          <div class="salutation alternate light-shadow">{{#if target.title_short}}{{target.title_short}} {{else}} Sen/Rep{{/if}}{{#if target.last}} {{target.last}}{{/if}},</div>
+          <div class="card-text">
+            {{#if card_text_start}}
+              {{{card_text_start}}}<strong>{{city}}</strong>{{{card_text_end}}} <span class="rep-callout"><span class="yes">Pass</span> H.R. 2!</span>
+            {{else}}
+              Don't make it even harder for Medicare patients and their families in <strong>{{city}}</strong>. <strong>Repeal the SGR now</strong> and avoid this disaster.
+            {{/if}}
+          </div>
+        </h1>
+      </div>
+
+      <!-- Signature -->
+      <div class="signature light-shadow">
+        <div class="photo signer">
+          <div class="outline"></div>
+          <div class="image circle-crop" {{#if avatar}}style="background: url('{{avatar}}') center center; background-size: cover;"{{/if}}></div>
+        </div>
+        <div class="signer-info">
+          <div class="name">{{first}}{{#if last}} {{last}}{{/if}}</div>
+          <div class="location">{{#if city}}{{city}}{{/if}}{{#if state}}, {{state}}{{/if}}</div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="ama-logo-circle"></div>
+        <div class="footer-content">
+          <span class="link">Send your own custom message at <strong>action.fixmedicarenow.org</strong></span>
+        </div>
+      </div>
+
+      <!-- Background -->
+      <div class="card-bg">
+        <div class="dark-layer"></div>
+        <div class="color top"></div>
+        <div class="doctors">
+          <img src="{{base_url}}/img/doctors-alt-compressed.png">
+        </div>
+        <div class="color bottom"></div>
+        <div class="doctors-dark">
+          <img src="{{base_url}}/img/doctors-dark-compressed.png">
+        </div>
+        <div class="snake">
+          <img src="{{base_url}}/img/snake.png">
+        </div>
+      </div>
+    </div>
+
+    {{{scripts}}}
+  </body>
+</html>
