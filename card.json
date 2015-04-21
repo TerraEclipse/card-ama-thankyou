@@ -49,7 +49,7 @@
       "variables": {
         "card_class": "positive_b",
         "card_text_start": "Thank you for listening to patients and physicians in ",
-        "card_text_end": " <strong>thank you</strong> for passing H.R. 2 and making SGR repeal happen!",
+        "card_text_end": " &mdash; <strong>thank you</strong> for passing H.R. 2 and making SGR repeal happen!",
         "vote": "+"
       }
     },
@@ -65,7 +65,7 @@
       "variables": {
         "card_class": "physician",
         "card_text_start": "Patients and physicians in ",
-        "card_text_end": " are disappointed that you voted against H.R. 2.  Thankfully, others in Congress put patient care first and <strong>passed this bill</strong> to repeal SGR!",
+        "card_text_end": " are disappointed that you voted against H.R. 2. Thankfully, others in Congress put patient care first and <strong>passed this bill</strong> to repeal SGR!",
         "vote": "-"
       }
     },
@@ -73,7 +73,7 @@
       "variables": {
         "card_class": "physician",
         "card_text_start": "Patients and physicians in ",
-        "card_text_end": " are disappointed that you voted against H.R. 2.  Thankfully, others in Congress put patient care first and <strong>passed this bill</strong> to repeal SGR!",
+        "card_text_end": " are disappointed that you voted against H.R. 2. Thankfully, others in Congress put patient care first and <strong>passed this bill</strong> to repeal SGR!",
         "vote": "-"
       }
     },
@@ -81,7 +81,7 @@
       "variables": {
         "card_class": "physician",
         "card_text_start": "Patients and physicians in ",
-        "card_text_end": " are disappointed that you voted against H.R. 2.  Thankfully, others in Congress put patient care first and <strong>passed this bill</strong> to repeal SGR!",
+        "card_text_end": " are disappointed that you voted against H.R. 2. Thankfully, others in Congress put patient care first and <strong>passed this bill</strong> to repeal SGR!",
         "vote": "-"
       }
     }
