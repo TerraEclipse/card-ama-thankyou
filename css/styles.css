@@ -679,6 +679,17 @@ body.loop-3 .ama-logo-circle {
   color: #7CCF4C;
 }
 
+/* Positive Variant B */
+.card.positive_b .color.top {
+  background: url('../img/color-top-purple.png');
+}
+.card.positive_b .color.bottom {
+  background: url('../img/color-bottom-purple.png');
+}
+.card.positive_b .main-copy strong {
+  color: purple;
+}
+
 /* Positive Variant C */
 .card.positive_c .color.top {
   background: url('../img/color-top-physician-2.png');
