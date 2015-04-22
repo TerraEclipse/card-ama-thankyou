@@ -142,7 +142,7 @@ body.loop-2 .physician .bottom {
   background: url('../img/color-bottom-physician-2.png');
 }
 
-body.loop-3 .patient .top {
+body.loop-3 .patient .top, {
   background: url('../img/color-top-patient-3.png');
 }
 body.loop-3 .patient .bottom {
@@ -652,4 +652,25 @@ body.loop-3 .footer-content {
 body.loop-3 .ama-logo-circle {
   left: auto;
   right: 20px;
+}
+
+
+/*
+=========================================
+'THANK YOU' VHOST CHANGES
+=========================================
+*/
+
+strong {
+  font-weight: 900;
+}
+body.negative_a .color.top,
+body.negative_b .color.top,
+body.negative_c .color.top {
+  background: url('../img/color-top-patient-3.png');
+}
+body.negative_a .color.bottom,
+body.negative_b .color.bottom,
+body.negative_c .color.bottom {
+  background: url('../img/color-bottom-patient-3.png');
 }
