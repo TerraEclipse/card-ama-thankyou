@@ -668,6 +668,17 @@ body.loop-3 .ama-logo-circle {
   font-size: 0.9em;
 }
 
+/* Positive Variant A */
+.card.positive_a .color.top {
+  background: url('../img/color-top-green.png');
+}
+.card.positive_a .color.bottom {
+  background: url('../img/color-bottom-green.png');
+}
+.card.positive_c .main-copy strong {
+  color: green;
+}
+
 /* Positive Variant C */
 .card.positive_c .color.top {
   background: url('../img/color-top-physician-2.png');
