@@ -672,7 +672,7 @@ body.loop-3 .ama-logo-circle {
 .card.positive_c .color.bottom {
   background: url('../img/color-bottom-physician-2.png');
 }
-.card.positive_c strong {
+.card.positive_c .main-copy strong {
   color: #32C1D3;
 }
 
@@ -687,8 +687,8 @@ body.loop-3 .ama-logo-circle {
 .card.negative_c .color.bottom {
   background: url('../img/color-bottom-patient-3.png');
 }
-.card.negative_a strong,
-.card_negative_b strong,
-.card_negative_c strong {
+.card.negative_a .main-copy strong,
+.card_negative_b .main-copy strong,
+.card_negative_c .main-copy strong {
   color: #F05C37;
 }
