@@ -664,6 +664,19 @@ body.loop-3 .ama-logo-circle {
 strong {
   font-weight: 900;
 }
+
+/* Positive Variant C */
+.card.positive_c .color.top {
+  background: url('../img/color-top-physician-2.png');
+}
+.card.positive_c .color.bottom {
+  background: url('../img/color-bottom-physician-2.png');
+}
+.card.positive_c strong {
+  color: #32C1D3;
+}
+
+/* All Negative Variants */
 .card.negative_a .color.top,
 .card.negative_b .color.top,
 .card.negative_c .color.top {
@@ -673,4 +686,9 @@ strong {
 .card.negative_b .color.bottom,
 .card.negative_c .color.bottom {
   background: url('../img/color-bottom-patient-3.png');
+}
+.card.negative_a strong,
+.card_negative_b strong,
+.card_negative_c strong {
+  color: #F05C37;
 }
