@@ -730,6 +730,11 @@ body.loop-3 .photo.target.large .outline {
   width: 300px;
   height: 300px;
 }
+body.loop-3 .photo.target.large .image {
+  width: 280px;
+  height: 280px;
+  background-size: cover;
+}
 body.loop-3 .salutation {
   top: 30px;
   font-size: 3.35em;
