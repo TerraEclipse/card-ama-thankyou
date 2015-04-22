@@ -713,8 +713,8 @@ body.loop-3 .ama-logo-circle {
   background: url('../img/color-bottom-patient-3.png');
 }
 .card.negative_a .main-copy strong,
-.card_negative_b .main-copy strong,
-.card_negative_c .main-copy strong {
+.card.negative_b .main-copy strong,
+.card.negative_c .main-copy strong {
   color: #F05C37;
 }
 
