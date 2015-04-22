@@ -664,6 +664,9 @@ body.loop-3 .ama-logo-circle {
 .main-copy strong {
   font-weight: 900;
 }
+.footer-strong {
+  font-size: 0.9em;
+}
 
 /* Positive Variant C */
 .card.positive_c .color.top {
