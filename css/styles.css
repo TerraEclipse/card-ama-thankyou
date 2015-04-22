@@ -717,3 +717,16 @@ body.loop-3 .ama-logo-circle {
 .card_negative_c .main-copy strong {
   color: #F05C37;
 }
+
+body.loop-3 .photo.target.small {
+  display: none;
+}
+body.loop-3 .photo.target.large {
+  display: block;
+  top: -90px;
+}
+body.loop-3 .photo.target.large,
+body.loop-3 .photo.target.large .outline {
+  width: 300px;
+  height: 300px;
+}
