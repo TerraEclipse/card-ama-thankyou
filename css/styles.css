@@ -675,8 +675,8 @@ body.loop-3 .ama-logo-circle {
 .card.positive_a .color.bottom {
   background: url('../img/color-bottom-green.png');
 }
-.card.positive_c .main-copy strong {
-  color: green;
+.card.positive_a .main-copy strong {
+  color: #7CCF4C;
 }
 
 /* Positive Variant C */
